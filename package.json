@@ -2,7 +2,7 @@
   "name": "fly",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://vitalik9135eb2.github.io/HELYFLY",
+  "homepage" : "https://vitalik9135eb2.github.io/HELYFLY/index.html",
   "dependencies": {
     "@material-ui/core": "^4.12.2",
     "@testing-library/jest-dom": "^5.12.0",
