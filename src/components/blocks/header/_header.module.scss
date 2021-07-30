@@ -1,0 +1,62 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.header{
+    @media screen and (min-width: 768px){
+        box-shadow: 0 4px 5px rgba(0,0,0,0.15);
+    }
+    .container{
+        @extend %container;
+        .inner{
+            @include flex (flex, row, space-between, center);
+            height: 60px;
+            @media screen and (min-width: 768px){
+                height: 100px;
+            }
+            @media screen and (min-width: 1280px){
+                margin: 0 0 0 9px;
+            }
+            .wrapper{
+                display: flex;
+                .logo{
+                    margin-right: 45px;
+                    @media screen and (min-width: 576px){
+                        margin-right: 39px;
+                    }
+                    @media screen and (min-width: 768px){
+                        width: 130px;
+                    }
+                }
+                .phoneCity{
+                    @include text (14px, 400, 17px, $linkColor);
+                    @media screen and (min-width: 576px) {
+                        display: none;
+                    }
+                }
+                .phone{
+                    display: none;
+                    @media screen and (min-width: 576px) {
+                        display: block;
+                    }
+                    
+                    .span{
+                        display: inline;
+                        @include text (14px, 400, 17px, $textColorLight);
+                    }
+                    .phoneLink{
+                        @include text (14px, 400, 17px, $textColor);
+                    }
+                }
+            }
+            .user{
+                .img{
+    
+                }
+                @media screen and (min-width: 1280px) {
+                    display: none;
+                }
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,123 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.footer {
+    @media screen and (min-width: 1280px){
+        margin: -351px 0 0 0;
+    }
+    .container {
+        @extend %container;
+        .inner {
+            @include flex (flex, column, center, flex-start);
+           
+
+            .footerTop{
+
+                width: 100%;
+                @include flex (flex, row, space-between, center);
+                margin: 78px 0 0 0;
+                @media screen and (min-width: 576px){
+                    margin: 73px 0 0 0;
+                }
+                @media screen and (min-width: 1280px){
+                    margin: 70px 0 0 71px;
+                }
+
+                .logoWrap{
+                    .logo{
+                       
+                        .logoImg{
+                            @media screen and (min-width: 576px){
+                                width: 135px;
+                                height: 27px;
+                            }
+                        }
+                    }
+                }
+
+                .socialWrap{
+                    @include flex (flex, row, flex-start, center);
+                    transform: translate(17px, 0);
+                    @media screen and (min-width: 576px){
+                        transform: translate(18px, -7px);
+                    }
+                    @media screen and (min-width: 1280px){
+                        transform: translate(-202px, -7px);
+                    }
+                    .social{
+                        margin: 0 0 0 30px;
+                        &:nth-child(1){
+                            margin: 0;
+                        }
+                        
+                    }
+                }
+
+
+            }
+
+            .footerBottom{
+                @include flex (flex, column, center, flex-start);
+                margin: 44px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        @include flex (flex, row, center, flex-start);
+                    }
+
+                .cardWrap{
+                    @media screen and (min-width: 576px){
+                        margin: 17px 0 0 0;
+                    }
+                    @media screen and (min-width: 1280px){
+                        margin: 17px 0 0 73px;
+                    }
+                    .link{
+                        margin-left: 16px;
+                        &:nth-child(1){
+                            margin: 0;
+                        }
+                        .mc{
+                            
+                            @media screen and (min-width: 576px){
+                                width: 39px;
+                                height: 25px;
+                            }
+                        }
+                        .visa{
+                            
+                            @media screen and (min-width: 576px){
+                                width: 42px;
+                                height: 25px;
+                            }
+                        }
+                        
+                    }
+                }
+
+
+                .textWrap{
+                    margin: 20px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        margin: 8px 0 0 27px;
+                    }
+                    @media screen and (min-width: 768px){
+                        margin: 4px 0 0 94px;
+                    }
+                    @media screen and (min-width: 1280px){
+                        margin: 7px 0 0 261px;
+                    }
+                    .tel{
+                        @include text (14px, 400, 17px, $textColorLight);
+                        text-decoration: none;
+                        margin: 0 0 0 25px;
+                    }
+                    .spanEnd{
+                        @include text (14px, 400, 17px, $textColorLight);
+                        margin: 9px 0 0 16px;
+                    }
+                }
+            }
+
+          
+        }
+    }
+}

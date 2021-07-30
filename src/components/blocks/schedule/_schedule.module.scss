@@ -1,0 +1,196 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.schedule {
+    
+    .container {
+        @extend %container;
+        .inner {
+            @include flex (flex, column, center, center);
+
+            .title{
+                @include text(26px, 400, 32px, $textColor);
+                margin: 38px 0px 0 37px;
+                width: 274px;
+                position: relative;
+                @media screen and (min-width: 576px){
+                    margin: 71px 0px 0 37px;
+                }
+                @media screen and (min-width: 768px){
+                    @include text(20px, 500, 29px, $textColor);
+                    transform: translate(-206px, 41px);
+                }
+                @media screen and (min-width: 1280px){
+                    @include text(28px, 500, 41px, $textColor);
+                    transform: translate(-431px, 42px);
+                    width: 300px;
+                }
+                
+            }
+
+            .table{
+                border: 1px solid $secondaryColor;
+                width: 290px;
+                transform: translate(-2px, 40px);
+                @media screen and (min-width: 576px){
+                    width: 506px;
+                    transform: translate(9px, 52px);
+                }
+                @media screen and (min-width: 768px){
+                    width: 668px;
+                    transform: translate(9px, 66px);
+                }
+                @media screen and (min-width: 1280px){
+                    width: 770px;
+                    transform: translate(-176px, 70px);
+                }
+
+                .stringTitle{
+                    @include flex (flex, row, center, center);
+                    border-bottom: 1px solid $secondaryColor;
+                    @media screen and (min-width: 576px){
+                        justify-content: flex-start;
+                    }
+                    .tableTitle{
+                        @include text(18px, 400, 26px, $textColor);
+                        margin: 16px 0;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            background-image: url('./../../../assets/img/shedule/Group\ 5.3.svg');
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            width: 35px;
+                            height: 35px;
+                            display: none;
+                            @media screen and (min-width: 576px){
+                                display: block;
+                                top: -3px;
+                                right: -52px;
+                            }
+                        }
+                        @media screen and (min-width: 576px){
+                            margin: 25px 0 19px 18px;
+                        }
+                        @media screen and (min-width: 768px){
+                            margin: 25px 0 19px 27px;
+                        }
+                    }
+                }
+
+                .string{
+                    @include flex (flex, column, center, flex-start);
+                    border-bottom: 1px solid $secondaryColor;
+                    height: 220px;
+                    @media screen and (min-width: 576px){
+                        @include flex (flex, row, space-between, flex-start);
+                        height: 130px;
+                    }
+                    .spanWrap{
+                        transform: translate(18px, -9px);
+                        @media screen and (min-width: 576px){
+                            transform: translate(18px, 19px);
+                        }
+                        @media screen and (min-width: 768px){
+                            transform: translate(27px, 19px);
+                        }
+                        .time{
+                            @include text(18px, 400, 26px, $textColor);
+                        }
+                        .amount{
+                            @include text(18px, 600, 26px, $textColor);
+                            margin: 10px 0 0 0;
+                        }
+                        .remainder{
+                            @include text(18px, 400, 26px, $textColor);
+                            margin: 6px 0 0 0;
+                        }
+                    }
+
+                    .btn{
+                        @include text(14px, 500, 17px, $acentColor);
+                        padding: 16px 32px;
+                        border: 2px solid $acentColor;
+                        border-radius: 3px;
+                        background-color: $primaryColor;
+                        transform: translate(20px, 9px);
+                        cursor: pointer;
+                        &:hover{
+                            background-color: #fc9b0948;
+                        }
+                        @media screen and (min-width: 576px){
+                            transform: translate(-21px, 40px);
+                        }
+                        @media screen and (min-width: 768px){
+                            transform: translate(-30px, 40px);
+                        }
+                    }
+                }
+
+                .stringAbout{
+                    height: 100px;
+                    @include flex (flex, row, center, center);
+                    @include text(13px, 400, 19px, $textColor);
+                    position: relative;
+                    transform: translate(24px, -9px);
+                    @media screen and (min-width: 576px){
+                        @include text(18px, 400, 26px, $textColor);
+                        transform: translate(-59px, 12px);
+                    }
+                    @media screen and (min-width: 768px){
+                        transform: translate(-130px, 14px);
+                    }
+                    @media screen and (min-width: 1280px){
+                        height: 122px;
+                        transform: translate(-180px, 5px);
+                    }
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background-image:url("./.././../../assets/img/photosession/cup.png");
+                        background-size: 100%;
+                        width:36px;
+                        height: 41px;
+                        top: 40px;
+                        left: -5px;
+                        @media screen and (min-width: 576px){
+                            top: 27px;
+                            left: 73px;
+                        }
+                        @media screen and (min-width: 768px){
+                            left: 155px;
+                        }
+                        @media screen and (min-width: 1280px){
+                            top: 35px;
+                            left: 205px;
+                        }
+                    }
+
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        background-image:url("./.././../../assets/img/photosession/stars.png");
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        width:112px;
+                        height: 17px;
+                        bottom: 18px;
+                        left: 42px;
+                        @media screen and (min-width: 576px){
+                            bottom: 40px;
+                            left: 401px;
+                        }
+                        @media screen and (min-width: 768px){
+                            left: 481px;
+                        }
+                        @media screen and (min-width: 1280px){
+                            bottom: 53px;
+                            left: 531px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

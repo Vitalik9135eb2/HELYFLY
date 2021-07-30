@@ -1,0 +1,186 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.reviews {
+    @media screen and (min-width: 1280px){
+        transform: translate(8px, -323px);
+    }
+    .container {
+        @extend %container;
+        .inner {
+            @include flex (flex, column, center, center);
+            overflow: hidden;
+            @media screen and (min-width: 768px){
+                @include flex (flex, column, center, flex-start);
+            }
+
+            .title{
+                @include text (26px, 400, 39px, $textColor);
+                margin: 37px 0 0 15px;
+                @media screen and (min-width: 768px){
+                    @include text (20px, 400, 29px, $textColor);
+                    margin: 33px 0 0 0;
+                }
+                @media screen and (min-width: 1280px){
+                    @include text (28px, 500, 41px, $textColor);
+                }
+                @media screen and (min-width: 1440px){
+                    @include text (20px, 500, 29px, $textColor);
+                    margin: 10px 0 0 0;
+                }
+            }
+
+            .reviewsWrap{
+                width: 100%;
+                border-bottom: 1px solid $secondaryColor;
+                margin: 47px 0 0 0;
+                &:nth-child(4){
+                    display: none;
+                    @media screen and (min-width: 576px){
+                        display: block;
+                    }
+                }
+
+                @media screen and (min-width: 1280px){
+                    margin: 35px 0 0 0;
+                    width: 510px;
+                    border: none;
+                }
+
+                @media screen and (min-width: 1440px){
+                    margin: 39px 0 0 0;
+                }
+
+                
+                .personWrap{
+                    @include flex (flex, row, flex-start, flex-start);
+
+                    .photo{
+                        width: 84px;
+                        height: 84px;
+                        @media screen and (min-width: 768px){
+                            width: 101px;
+                            height: 101px;
+                        }
+                    }
+
+                    .spanWrap{
+                        transform: translate(19px, 5px);
+                        @media screen and (min-width: 768px){
+                            transform: translate(19px, 14px);
+                        }
+                        .name{
+                            @include text (16px, 500, 20px, $textColor);
+                            @media screen and (min-width: 768px){
+                                @include text (18px, 500, 22px, $textColor);
+                            }
+                        }
+                        .profession{
+                            @include text (14px, 400, 20px, $textColor);
+                            margin: 5px 0 8px 0;
+                        }
+                        .stars{
+                            position: relative;
+                            @media screen and (min-width: 768px){
+                                margin: 14px 0 0 0;
+                            }
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background-image: url("./../../../assets/img/reviews/stars.png");
+                                background-repeat: no-repeat;
+                                background-size: 100%;
+                                width: 118px;
+                                height: 17px;
+                                top: 0;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+
+                .textWrap{
+                    margin: 23px 0 0 12px;
+
+                    @media screen and (min-width: 768px){
+                        margin: -18px 0 0 131px;
+                    }
+                    @media screen and (min-width: 1280px){
+                        border-bottom: 1px solid $secondaryColor;
+                        margin: -21px 0 0 116px;
+                    }
+                   
+
+                    .textSpan{
+                        @include text (14px, 400, 21px, $textColorLight);
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            background-image: url("./../../../assets/img/reviews/icon.png");
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                            width: 15px;
+                            height: 11px;
+                            top: 3px;
+                            left: -19px;
+                        }
+                        @media screen and (min-width: 768px){
+                            transform: translate(177px, -6px);
+                        }
+                    }
+
+                    .text{
+                        @include text (14px, 400, 21px, $textColor);
+                        margin: 15px 0 0 -10px;
+                        @media screen and (min-width: 1280px){
+                            margin: 15px 0 0 7px;
+                        }
+                    }
+
+                    .date{
+                        @include text (14px, 400, 21px, $textColorLight);
+                        margin: 39px 0 22px -12px;
+                        @media screen and (min-width: 576px){
+                            margin: 15px 0 22px -12px;
+                        }
+                        @media screen and (min-width: 768px){
+                            margin: 36px 0 22px -12px;
+                        }
+
+                        @media screen and (min-width: 1280px){
+                            margin: 29px 0 24px 4px;
+                        }
+                    }
+                }
+            }
+
+            
+            .reviewsAll{
+                @include text (17px, 500, 25px, $linkColor);
+                position: relative;
+                margin: 54px 0 0 0;
+                cursor: pointer;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background-image: url("./../../../assets/img/photo/Arrow.png");
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 15px;
+                    height: 10px;
+                    top: 6px;
+                    right: -21px;
+                    transform: rotate(262deg);
+                }
+                @media screen and (min-width: 768px){
+                    margin: 35px 0 0 255px;
+                }
+                @media screen and (min-width: 1280px){
+                    margin: 35px 0 0 486px;
+                }   
+            }
+        }
+    }
+}

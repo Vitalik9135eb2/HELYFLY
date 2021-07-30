@@ -1,0 +1,83 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+
+.locationSlider {
+   height: 380px;
+   @media screen and (min-width: 1280px){
+      transform: translate(-47px, -509px);
+   }
+   .container{
+      @extend %container;
+
+      .inner{
+         @include flex (flex,column,flex-start,center);
+         border: 1px solid $secondaryColor;
+         height: 380px;
+         width: 274px;
+         margin: 24px 0 0 8px;
+         @media screen and (min-width: 576px){
+            width: 400px;
+            margin: 62px 0 0 53px;
+         }
+         @media screen and (min-width: 768px){
+            @include flex (flex,column,center,center);
+            margin: 80px 0 0 133px;
+         }
+         @media screen and (min-width: 1280px){
+         
+          background-color: #fff;
+         }
+         .sliderWrap{
+            width: 100%;
+
+            .sliderItems{
+               @include flex (flex,column,flex-start,center);
+               width: 100%;
+
+               .sliderImg{
+                  margin: 54px 0px 0 11px;
+               }
+
+               .spanWrap{
+                  text-align: center;
+                  margin: 22px 0 45px 11px;
+                  .sliderText{
+                     @include text (16px, 500, 23px, $textColor);
+                  }
+                  .sliderSpan{
+                     @include text (14px, 500, 20px, $textColor);
+                     margin: 5px 0 0 0;
+                  }
+               }
+            }
+         }
+
+
+         .content{
+            @include flex (flex,row,flex-start,center);
+            .photo{
+               width: 67px;
+               height: 67px;
+               transform: translate(30px, -5px);
+            }
+
+            .infoWrap{
+               margin: 25px 0 0 40px;
+               .name{
+                  @include text (16px, 500, 20px, $textColor);
+               }
+               .profession{
+                  @include text (14px, 400, 21px, $textColor);
+               }
+               .info{
+                  @include text (14px, 400, 21px, $linkColor);
+                  text-decoration: none;
+               }
+            }
+         }
+      }
+      
+   }
+
+}

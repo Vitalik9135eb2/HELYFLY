@@ -1,0 +1,159 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.about {
+    
+    .container {
+        @extend %container;
+        .inner {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-items: center;
+            @media screen and (min-width: 768px){
+                margin: 620px -22px 0 0;
+            }
+            @media screen and (min-width: 1280px){
+                grid-template-columns: 1fr 1fr;
+                margin: 214px -43px 0 0;
+            }
+
+            .photographer{
+                @include flex (flex, column, center, center);
+                position: relative;
+                margin: 46px 16px 0 0;
+                @media screen and (min-width: 576px){
+                    margin: 44px 7px 0 0;
+                }
+                @media screen and (min-width: 1280px){
+                    grid-area: 1/2/2/3;
+                    margin: -154px -2px 0 0;
+                }
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background-image: url('./../../../assets/img/about/helth.svg');
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    width: 31px;
+                    height: 27px;
+                    top: -13px;
+                    right: -51px;
+                    @media screen and (min-width: 1280px){
+                        top: 205px;
+                        right: -45px;
+                    }
+                }
+
+                .photo{
+
+                }
+                .name{
+                    @include text (18px, 500, 22px, $textColor);
+                    margin: 23px 0 0 0;
+                }
+                .profession{
+                    @include text (14px, 400, 21px, $textColor);
+                    margin: 6px -5px 0 0px;
+                }
+                .info{
+                    @include text (14px, 400, 21px, $linkColor);
+                    text-align: center;
+                    width: 200px;
+                    margin: 9px 0px 0 2px;
+                    cursor: pointer;
+                }
+            }
+
+
+            .infoWrap{
+                @media screen and (min-width: 768px){
+                    transform: translate(-50px, 5px);
+                }
+                @media screen and (min-width: 1280px){
+                    transform: translate(0px, 6px);
+                }
+                .titleAboutUs{
+                    @include text (18px, 500, 26px, $textColor);
+                    margin: 18px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        margin: 24px 0 0 0;
+                    }
+                }
+                .aboutUs{
+                    @include text (16px, 400, 24px, $textColor);
+                    width: 290px;
+                    margin: 14px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        width: 506px;
+                    }
+                    @media screen and (min-width: 768px){
+                        width: 573px;
+                    }
+                }
+                .moreAbout{
+                    @include text (16px, 400, 23px, $linkColor);
+                    position: relative;
+                    margin-top: 22px;
+                    cursor: pointer;
+                    @media screen and (min-width: 768px){
+                        margin-top: 7px;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background-image: url('./../../../assets/img/photo/Arrow.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        width: 11px;
+                        height: 6px;
+                        top: 10px;
+                        left: 110px;
+                    }
+                }
+
+                .titleServices{
+                    @include text (18px, 500, 26px, $textColor);
+                    margin: 47px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        margin: 79px 0 0 0;
+                    }
+                    @media screen and (min-width: 768px){
+                        margin: 35px 0 0 0;
+                    }
+                }
+
+                .services{
+                    @include text (16px, 400, 24px, $textColor);
+                    width: 290px;
+                    margin: 15px 0 0 0;
+                    @media screen and (min-width: 576px){
+                        width: 451px;
+                    }
+                    @media screen and (min-width: 768px){
+                        width: 573px;
+                    }
+                }
+
+                .moreServices{
+                    @include text (16px, 400, 23px, $linkColor);
+                    position: relative;
+                    margin: 18px 0 0 0;
+                    cursor: pointer;
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        background-image: url('./../../../assets/img/photo/Arrow.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        width: 11px;
+                        height: 6px;
+                        top: 10px;
+                        left: 110px;
+                    }
+                }
+            }
+
+        }
+    }
+}

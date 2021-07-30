@@ -1,0 +1,112 @@
+@import './../../../styles/sass/_vars.scss';
+@import './../../../styles/sass/_mixins.scss';
+
+.main {
+    color: $primaryColor;
+    background-image: url('./../../../assets/img/header/fly.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 61% 0;
+    @media screen and (min-width: 576px) {
+        background-position: 60% 0;
+    }
+    @media screen and (min-width: 768px) {
+        background-position: 53% 0;
+    }
+    // @media screen and (min-width: 1280px) {
+    //     background-position: 49% -183px;
+    //     background-size: 143%;
+    // }
+    // @media screen and (min-width: 1440px) {
+    //     background-position: 48% -227px;
+    //     background-size: 136%;
+    // }
+    // @media screen and (min-width: 1920px) {
+    //     background-position: 0% -214px;
+    //     background-size: 100%;
+    // }
+    .container {
+        @extend %container;
+        .inner {
+            @include flex (flex, column, center, center);
+            height: 655px;
+            @media screen and (min-width: 768px){
+                height: 840px;
+            }
+            .title{
+                @include text(32px, 700, 39px, $primaryColor);
+                margin: -55px 26px 0 0; 
+                width: 247px;
+                .span {
+                    color: $acentColor;
+                    display: inline;
+                }
+                @media screen and (min-width: 576px){
+                    margin: -33px 243px 0 0;
+                    width: 247px; 
+                }
+                @media screen and (min-width: 768px){
+                    margin: -5px 51px 0 0;
+                    width: 596px; 
+                    @include text(40px, 700, 49px, $primaryColor);
+                }
+                @media screen and (min-width: 1280px){
+                    margin: -5px 228px 0 0;
+                    width: 897px; 
+                }
+            }
+            .priceBox {
+                height: 93px;
+                width: 208px;
+                background-image: url("./../../../assets/img/header/price-box.svg");
+                background-repeat: no-repeat;
+                margin: 0;
+                @include flex (flex, row, space-around, center);
+                padding: 5px 15px;
+                transform: translate(-37px, 38px);
+
+                @media screen and (min-width: 576px){
+                    transform: translate(-146px, 36px);
+                }
+                @media screen and (min-width: 768px){
+                    transform: translate(-213px, 22px);
+                    width: 230px;
+                    height: 96px;
+                    background-size: 100%;
+                }
+                @media screen and (min-width: 1280px){
+                    transform: translate(-450px, 22px);
+                   
+                }
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    margin: -20px 0 0 20px;
+                    @media screen and (min-width: 768px){
+
+                    }
+                    .priceLabel{
+                        @include text(18px, 400, inherit, $primaryColor);   
+                    }
+                    @media screen and (min-width: 768px){
+                        font-size: 20px;
+                    }
+                    .price {
+                        @include text(30px, 800, inherit,$primaryColor);
+                    }
+                    @media screen and (min-width: 768px){
+                        font-size: 35px;
+                    }
+                }
+                .percent {
+                    border-radius: 50%;
+                    transform: translate(0, -5px);
+                    filter: drop-shadow(0px 4px 15px rgba(255, 255, 255, 0.25)) drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+                    height: 80px;
+                    width: 80px;
+                    
+                }
+            }
+        }
+    }
+}
