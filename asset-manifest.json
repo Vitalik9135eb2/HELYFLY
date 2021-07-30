@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/HELYFLY/static/css/main.fdf7c331.chunk.css",
+    "main.js": "/HELYFLY/static/js/main.b5077f92.chunk.js",
+    "main.js.map": "/HELYFLY/static/js/main.b5077f92.chunk.js.map",
+    "runtime-main.js": "/HELYFLY/static/js/runtime-main.1e56698f.js",
+    "runtime-main.js.map": "/HELYFLY/static/js/runtime-main.1e56698f.js.map",
+    "static/css/2.d287559b.chunk.css": "/HELYFLY/static/css/2.d287559b.chunk.css",
+    "static/js/2.55ebc4f0.chunk.js": "/HELYFLY/static/js/2.55ebc4f0.chunk.js",
+    "static/js/2.55ebc4f0.chunk.js.map": "/HELYFLY/static/js/2.55ebc4f0.chunk.js.map",
+    "static/js/3.257819e6.chunk.js": "/HELYFLY/static/js/3.257819e6.chunk.js",
+    "static/js/3.257819e6.chunk.js.map": "/HELYFLY/static/js/3.257819e6.chunk.js.map",
+    "index.html": "/HELYFLY/index.html",
+    "static/css/2.d287559b.chunk.css.map": "/HELYFLY/static/css/2.d287559b.chunk.css.map",
+    "static/css/main.fdf7c331.chunk.css.map": "/HELYFLY/static/css/main.fdf7c331.chunk.css.map",
+    "static/js/2.55ebc4f0.chunk.js.LICENSE.txt": "/HELYFLY/static/js/2.55ebc4f0.chunk.js.LICENSE.txt",
+    "static/media/1.2c2ceb42.png": "/HELYFLY/static/media/1.2c2ceb42.png",
+    "static/media/1.def1294f.svg": "/HELYFLY/static/media/1.def1294f.svg",
+    "static/media/1.e1ca5c55.png": "/HELYFLY/static/media/1.e1ca5c55.png",
+    "static/media/2.28253a3d.png": "/HELYFLY/static/media/2.28253a3d.png",
+    "static/media/2.ac64f1da.png": "/HELYFLY/static/media/2.ac64f1da.png",
+    "static/media/2.f9fcb622.svg": "/HELYFLY/static/media/2.f9fcb622.svg",
+    "static/media/3.715e8df0.svg": "/HELYFLY/static/media/3.715e8df0.svg",
+    "static/media/3.c80ebdf3.png": "/HELYFLY/static/media/3.c80ebdf3.png",
+    "static/media/4.440ba49b.png": "/HELYFLY/static/media/4.440ba49b.png",
+    "static/media/Facebook.11f292a3.svg": "/HELYFLY/static/media/Facebook.11f292a3.svg",
+    "static/media/_schedule.module.scss": "/HELYFLY/static/media/Group 5.3.19333675.svg",
+    "static/media/Instragram.dd042635.svg": "/HELYFLY/static/media/Instragram.dd042635.svg",
+    "static/media/_main.module.scss": "/HELYFLY/static/media/price-box.7f942ea7.svg",
+    "static/media/_about.module.scss": "/HELYFLY/static/media/helth.2f8f8386.svg",
+    "static/media/logo.e77b065c.svg": "/HELYFLY/static/media/logo.e77b065c.svg",
+    "static/media/mari.d5a6b574.png": "/HELYFLY/static/media/mari.d5a6b574.png",
+    "static/media/_photosession.module.scss": "/HELYFLY/static/media/video.c0555562.png",
+    "static/media/vk.d250abdf.svg": "/HELYFLY/static/media/vk.d250abdf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1e56698f.js",
+    "static/css/2.d287559b.chunk.css",
+    "static/js/2.55ebc4f0.chunk.js",
+    "static/css/main.fdf7c331.chunk.css",
+    "static/js/main.b5077f92.chunk.js"
+  ]
+}
