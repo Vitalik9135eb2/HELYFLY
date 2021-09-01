@@ -12,15 +12,15 @@ $linkColor: #5286EC;
 
 %container{
     padding: 0 15px;
-        @media screen and (min-width: 575px) {
-            padding: 0 55px;
-        }
-        @media screen and (min-width: 768px) {
-            padding: 0 50px;
-        }
-        @media screen and (min-width: 1280px) {
-            padding: 0;
-            width: 1140px;
-            margin: 0 auto;
-        }
+    @media screen and (min-width: 575px) {
+        padding: 0 25px;
+    }
+    @media screen and (min-width: 768px) {
+        padding: 0 50px;
+    }
+    @media screen and (min-width: 1280px) {
+        padding: 0;
+        width: 1140px;
+        margin: 0 auto;
+    }
 }
