@@ -24,69 +24,70 @@ function Location() {
 
             <div className={s.inner}>
 
-              <div className={s.sliderWrap}>
+              {/* <div className={s.locationSliderContent}> */}
 
-              <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}}
-                navigation={true} className="mySwiper">
+                <div className={s.sliderWrap}>
 
-                <SwiperSlide>
-                  <div className={s.sliderItems}>
+                  <Swiper slidesPerView={1} spaceBetween={30} loop={true} pagination={{"clickable": true}}
+                    navigation={true} className="mySwiper">
 
-                    <img className={s.sliderImg} src={One}/>
+                    <SwiperSlide>
+                      <div className={s.sliderItems}>
 
-                    <div className={s.spanWrap}>
-                      <span className={s.sliderText}>Где встречаемся?</span>
-                      <span className={s.sliderSpan}>Москва</span>
+                        <img className={s.sliderImg} src={One}/>
+
+                        <div className={s.spanWrap}>
+                          <span className={s.sliderText}>Где встречаемся?</span>
+                          <span className={s.sliderSpan}>Москва</span>
+                        </div>
+
+                      </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                      <div className={s.sliderItems}>
+
+                        <img className={s.sliderImg} src={Two}/>
+
+                        <div className={s.spanWrap}>
+                          <span className={s.sliderText}>Время съемки</span>
+                          <span className={s.sliderSpan}>3 часа</span>
+                        </div>
+
+                      </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                      <div className={s.sliderItems}>
+
+                        <img className={s.sliderImg} src={Three}/>
+
+                        <div className={s.spanWrap}>
+                          <span className={s.sliderText}>Мест осталось:</span>
+                          <span className={s.sliderSpan}>2 места</span>
+                        </div>
+
+                      </div>
+                    </SwiperSlide>
+                  </Swiper>
+
+                </div>
+
+                <div className={s.content}>
+                    <img className={s.photo} src={photo}/>
+
+                    <div className={s.infoWrap}>
+
+                      <span className={s.name}>Мария Иванова</span>
+                      <span className={s.profession}>Фотограф</span>
+                      <a href="#" className={s.info}>Показать больше информации о фотографе</a>
+
                     </div>
-
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className={s.sliderItems}>
-
-                    <img className={s.sliderImg} src={Two}/>
-
-                    <div className={s.spanWrap}>
-                      <span className={s.sliderText}>Время съемки</span>
-                      <span className={s.sliderSpan}>3 часа</span>
-                    </div>
-
-                  </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                  <div className={s.sliderItems}>
-
-                    <img className={s.sliderImg} src={Three}/>
-
-                    <div className={s.spanWrap}>
-                      <span className={s.sliderText}>Мест осталось:</span>
-                      <span className={s.sliderSpan}>2 места</span>
-                    </div>
-
-                
-
-                  </div>
-                </SwiperSlide>
-            
-            
-              </Swiper>
+                {/* </div> */}
 
               </div>
 
-              <div className={s.content}>
-                  <img className={s.photo} src={photo}/>
-
-                  <div className={s.infoWrap}>
-
-                    <span className={s.name}>Мария Иванова</span>
-                    <span className={s.profession}>Фотограф</span>
-                    <a href="#" className={s.info}>Показать больше информации о фотографе</a>
-
-                  </div>
-              </div>
-
+            
             </div>
 
 
