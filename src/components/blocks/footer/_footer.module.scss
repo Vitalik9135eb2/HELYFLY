@@ -25,7 +25,7 @@
 
                 .logoWrap{
                     .logo{
-                       
+                    
                         .logoImg{
                             @media screen and (min-width: 576px){
                                 width: 135px;
@@ -37,7 +37,6 @@
 
                 .socialWrap{
                     @include flex (flex, row, flex-start, center);
-                    transform: translate(17px, 0);
                     @media screen and (min-width: 576px){
                         transform: translate(18px, -7px);
                     }
