@@ -27,7 +27,7 @@
                 }
                 @media screen and (min-width: 1280px){
                     grid-area: 1/2/2/3;
-                    margin: -154px -2px 0 0;
+                    margin: -80px -2px 0 0;
                 }
                 &::after{
                     position: absolute;
@@ -40,7 +40,7 @@
                     top: -13px;
                     right: -51px;
                     @media screen and (min-width: 1280px){
-                        top: 205px;
+                        top: 260px;
                         right: -45px;
                     }
                 }
@@ -80,21 +80,73 @@
                         margin: 24px 0 0 0;
                     }
                 }
+                .aboutUsActive{
+                    @include text (16px, 400, 24px, $textColor);
+                    width: 290px;
+                    margin: 14px 0 0 0;
+                    overflow: hidden;
+                    height: 700px;
+                    transition: 1s;
+                    @media screen and (min-width: 576px){
+                        width: 506px;
+                        height: 430px;
+                    }
+                    @media screen and (min-width: 768px){
+                        width: 573px;
+                        height: 390px;
+                    }
+                }
                 .aboutUs{
                     @include text (16px, 400, 24px, $textColor);
                     width: 290px;
                     margin: 14px 0 0 0;
+                    overflow: hidden;
+                    height: 120px;
+                    transition: 1s;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
                     @media screen and (min-width: 576px){
                         width: 506px;
                     }
                     @media screen and (min-width: 768px){
                         width: 573px;
                     }
+                    
                 }
+                .moreAbout>.close{display: none;}
+                .moreAboutActive>.open{display: none;}
+
+                .moreAboutActive{
+                    @include text (16px, 400, 23px, $linkColor);
+                    position: relative;
+                    margin-top: 22px;
+                    background-color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    @media screen and (min-width: 768px){
+                        margin-top: 7px;
+                    }
+                    &::before{
+                        position: absolute;
+                        content: "";
+                        transform: rotate(180deg);
+                        background-image: url('./../../../assets/img/photo/Arrow.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        width: 11px;
+                        height: 6px;
+                        top: 10px;
+                        left: 90px;
+                    }
+                }
+
                 .moreAbout{
                     @include text (16px, 400, 23px, $linkColor);
                     position: relative;
                     margin-top: 22px;
+                    background-color: #fff;
+                    border: none;
                     cursor: pointer;
                     @media screen and (min-width: 768px){
                         margin-top: 7px;
@@ -135,23 +187,6 @@
                     }
                 }
 
-                .moreServices{
-                    @include text (16px, 400, 23px, $linkColor);
-                    position: relative;
-                    margin: 18px 0 0 0;
-                    cursor: pointer;
-                    &::before{
-                        position: absolute;
-                        content: "";
-                        background-image: url('./../../../assets/img/photo/Arrow.png');
-                        background-repeat: no-repeat;
-                        background-size: 100%;
-                        width: 11px;
-                        height: 6px;
-                        top: 10px;
-                        left: 110px;
-                    }
-                }
             }
 
         }

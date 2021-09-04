@@ -106,7 +106,6 @@ function Reviews() {
 
                     </div>
 
-               
                     <a className={s.reviewsAll}>Показать Все (134)</a>
 
 
