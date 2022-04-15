@@ -11,8 +11,10 @@ import Map from './components/blocks/map/Map';
 import Location from './components/blocks/location/Location';
 import Reviews from './components/blocks/reviews/Reviews';
 import Footer from './components/blocks/footer/Footer';
+import ReviewsContainer from './components/blocks/reviews/ReviewsContainer';
 
-function App() {
+function App(props) {
+  
   return (
     <div className="App">
       <Header/>
@@ -23,7 +25,11 @@ function App() {
       <Schedule/>
       <Map/>
       <Location/>
-      <Reviews/>
+      {/* <Reviews store={props.store} addNewReviews={props.addNewReviews} upText={props.upText}/> */}
+
+      {/* <Reviews store={props.store} dispatch={props.dispatch}/> */}
+
+      <ReviewsContainer store={props.store} />
       <Footer/>
     </div>
   );

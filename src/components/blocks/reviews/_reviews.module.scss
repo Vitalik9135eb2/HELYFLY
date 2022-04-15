@@ -180,6 +180,35 @@
                     margin: 35px 0 0 486px;
                 }   
             }
+
+            .reviewsAddWrap{
+                margin-top: 40px;
+                @include flex (flex,column,center,flex-start);
+                padding-left: 116px;
+            }
+            .reviewsNew{
+                resize: none;
+                width: 400px;
+                height: 150px;
+                border: 1px solid #c4c4c4;
+                border-radius: 15px;
+                padding: 20px;
+            }
+
+            .reviewsBtnAdd{
+                margin-top: 15px;
+                align-self: flex-end;
+                background: inherit;
+                border: 1px solid $acentColor;
+                border-radius: 15px;
+                padding: 5px 10px;
+                color: $textColor;
+                transition: .3s;
+
+                &:hover{
+                    background-color: #f0f0f0;
+                }
+            }
         }
     }
 }
