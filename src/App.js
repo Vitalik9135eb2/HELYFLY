@@ -29,7 +29,7 @@ function App(props) {
 
       {/* <Reviews store={props.store} dispatch={props.dispatch}/> */}
 
-      <ReviewsContainer store={props.store} />
+      <ReviewsContainer />
       <Footer/>
     </div>
   );

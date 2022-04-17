@@ -1,32 +1,55 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import { addPostActionCreator, upDateActionCreator } from '../../../Redux/reviewsReduser';
 import Reviews from './Reviews';
 
 
-function ReviewsContainer(props) {
+// function ReviewsContainer(props) {
 
-    let state = props.store.getState()
+//     let state = props.store.getState()
 
-    let addPost = () => {
+//     let addPost = () => {
 
-        // props.addNewReviews();
+//         // props.addNewReviews();
 
-        // props.dispatch({type: "New Reviews"})
+//         // props.dispatch({type: "New Reviews"})
 
-        props.store.dispatch(addPostActionCreator())
+//         props.store.dispatch(addPostActionCreator())
+//     }
+
+//     let changeTextValue = (text) => {
+//         props.store.dispatch(upDateActionCreator(text))
+//     }
+
+
+
+//     return (
+
+//         <Reviews upText={changeTextValue} addPost={addPost} state={state.reviews} />
+//     );
+// }
+
+let mapStateToProps = (state) => {
+
+    return{
+        state: state.reviews
     }
-
-    let changeTextValue = (text) => {
-        props.store.dispatch(upDateActionCreator(text))
-    }
-
-
-
-    return (
-
-        <Reviews upText={changeTextValue} addPost={addPost} state={state.reviews} />
-    );
 }
+
+let mapDispatchToProps = (dispatch) =>{
+    return{
+        addPost: () => {
+            dispatch(addPostActionCreator())
+        },
+
+        changeTextValue: (text) => {
+            dispatch(upDateActionCreator(text))
+        }
+    }
+}
+
+
+const ReviewsContainer = connect (mapStateToProps,mapDispatchToProps)(Reviews)
 
 export default ReviewsContainer;

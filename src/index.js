@@ -4,17 +4,21 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import {Provider} from 'react-redux';
 
 
 
 let rerenderEntireTree = (state) => {
-  debugger
+
+  
   ReactDOM.render(
     <React.StrictMode>
-      
+      <Provider store={store}>
+        <App/>
+
+      </Provider>
       {/* <App store={state} addNewReviews={store.addNewReviews.bind(store)}  upText={store.updateText.bind(store)}/> */}
 
-      <App store={store} dispatch={store.dispatch.bind(store)}/>
   
     </React.StrictMode>,
     document.getElementById('root')

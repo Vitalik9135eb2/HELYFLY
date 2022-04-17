@@ -4,7 +4,6 @@ import ReviewsItem from './ReviewsItem';
 
 
 function Reviews(props) {
-
     
     let reviewsItemPost = props.state.reviewsData.map( item => {
 
@@ -34,7 +33,7 @@ function Reviews(props) {
 
     let changeTextValue = () => {
         let text = newPostEl.current.value;
-        props.upText(text);
+        props.changeTextValue(text);
 
         // props.dispatch({type: "New Text Reviews", upDate: text})
 
